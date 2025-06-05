@@ -58,6 +58,7 @@ nav:
       - 'Text Report': 'report/report_text.md'
   - 'Maintenance':
       - 'Purging Old Data': 'maintenance/purge_old_data.md'
+      - 'File Hashing': 'maintenance/hash_files.md'
   - 'Changelog':
       - 'V0.3.0': 'changelog/v030.md'
 
