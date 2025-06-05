@@ -4,6 +4,7 @@ from __future__ import annotations
 import argparse
 import logging
 import os
+from pathlib import Path
 from configparser import ConfigParser
 from typing import Dict, List
 
@@ -285,7 +286,9 @@ class InputArgsHandler(BaseModule):
 
     async def run(self, config: ConfigParser, args: Dict, data: Dict) -> None:
         """Execute Module."""
-        tex_version: str = toml.load(os.path.join('..', 'pyproject.toml'))['tool']['poetry']['version']
+        tex_version: str = toml.load(
+            Path(__file__).resolve().parents[2] / 'pyproject.toml'
+            )['tool']['poetry']['version']
         parent_parser = argparse.ArgumentParser(description=f'TEx - Telegram Monitor - {tex_version}')
         sub_parser = parent_parser.add_subparsers(title='actions', dest='action')
 
