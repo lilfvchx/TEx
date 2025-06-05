@@ -43,6 +43,7 @@ Repository: [https://github.com/guibacellar/TEx](https://github.com/guibacellar/
 - Elastic Search 8+ Native Integration
 - Image OCR using Tesseract
 - Signals for Helping Monitoring
+- File Hashing task for integrity verification
 
 <!-- LIMITATIONS -->
 ## Know Limitations
